@@ -1,0 +1,136 @@
+
+
+.my-background {
+  background-color: #96A8C8;
+  font-family: Lucida, Helvetica, sans-serif;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.my-top-menu {
+  color: #282B30;
+  font-size: 21px;
+  font-weight: 800;
+  font-variant: small-caps;
+  text-align: left;
+}
+
+.my-top-menu .row {
+
+}
+
+.my-top-menu .ui.column {
+}
+
+.my-top-menu .left-column {
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 12px;
+  margin-right: 1.5px;
+  text-indent: 55px;
+  padding: 20px;
+
+  /*float: left;*/
+  /*position: relative;*/
+  /*text-align: left;*/
+  /*padding: 17px*/
+}
+
+.my-top-menu .left-column .list .item {
+  color: black;
+  line-height: 100%;
+  font-size: 21px;
+}
+
+.my-top-menu .left-column .list .item:hover {
+  text-decoration: underline;
+}
+
+
+.my-top-menu .right-column {
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 12px;
+  margin-right: 1.5px;
+  text-indent: 10px;
+  width: 166px;
+  float: left;
+  position: relative;
+  text-align: left;
+  padding: 17px
+}
+
+.my-top-menu .right-column .smallcaptext {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.my-top-menu .right-column .list .item {
+  text-align: left;
+}
+
+.ui.topmenu.container {
+  color: #282B30;
+  font-size: 21px;
+  font-weight: 800;
+  font-variant: small-caps;
+}
+
+.ui.topmenu.container .leftcolumn {
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 12px;
+  margin-right: 1.5px;
+  text-indent: 50px;
+}
+
+.ui.topmenu.container .leftcolumn a {
+  color: #282B30;
+  line-height: 150%;
+}
+
+.ui.topmenu.container .leftcolumn .link:hover {
+  text-decoration: underline;
+}
+
+.ui.topmenu.container .rightcolumn {
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 12px;
+  margin-left: 1.5px;
+}
+
+.ui.topmenu.container .rightcolumn .italictop {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 120%;
+  vertical-align: top;
+}
+
+.ui.middlebox.container .middlecolumn {
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 12px;
+  color: #282B30;
+  font-size: 21px;
+  font-weight: 800;
+  font-variant: small-caps;
+  margin-top: 19px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ui.middlebox.container .buttonmenu {
+  padding: 15px;
+}
+
+.ui.button.mybutton {
+  background-color: #6E7B91;
+  color: white;
+  border: 2px solid black;
+}
+
+.ui.button.mybutton:hover {
+  background-color: white;
+  color: #6E7B91;
+}
