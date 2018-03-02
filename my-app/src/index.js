@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Container, Grid, Header, Image, List, Menu } from 'semantic-ui-react';
+import { Button, Container, Grid, Header, Image, List, Menu } from 'semantic-ui-react';
 
 class TopMenu extends React.Component {
   render() {
@@ -51,23 +51,19 @@ class MiddleSection extends React.Component {
                 <List textAligned="center">
                   <List.Item><List.Content>Interaction</List.Content></List.Item>
                   <List.Item>
-                    <div class="centered buttonmenu buttons">
-                      <button class="ui mybutton compact mini button">|<i class="chevron left icon"></i></button>
-                      <button class="ui mybutton compact mini button"><i class="chevron left icon"></i>Prev</button>
-                      <button class="ui mybutton compact mini button">Random</button>
-                      <button class="ui mybutton compact mini button">Next<i class="chevron right icon"></i></button>
-                      <button class="ui mybutton compact mini button"><i class="chevron right icon"></i>|</button>
-                    </div>
+                    <Button compact size="mini">|<i class="chevron left icon"></i></Button>
+                    <Button compact size="mini"><i class="chevron left icon"></i>Prev</Button>
+                    <Button compact size="mini">Random</Button>
+                    <Button compact size="mini">Next<i class="chevron right icon"></i></Button>
+                    <Button compact size="mini"><i class="chevron right icon"></i>|</Button>
                   </List.Item>
                   <Image src="https://imgs.xkcd.com/comics/interaction.png" centered />
                   <List.Item>
-                    <div class="centered buttonmenu buttons">
-                      <button class="ui mybutton compact mini button">|<i class="chevron left icon"></i></button>
-                      <button class="ui mybutton compact mini button"><i class="chevron left icon"></i>Prev</button>
-                      <button class="ui mybutton compact mini button">Random</button>
-                      <button class="ui mybutton compact mini button">Next<i class="chevron right icon"></i></button>
-                      <button class="ui mybutton compact mini button"><i class="chevron right icon"></i>|</button>
-                    </div>
+                    <Button compact size="mini">|<i class="chevron left icon"></i></Button>
+                    <Button compact size="mini"><i class="chevron left icon"></i>Prev</Button>
+                    <Button compact size="mini">Random</Button>
+                    <Button compact size="mini">Next<i class="chevron right icon"></i></Button>
+                    <Button compact size="mini"><i class="chevron right icon"></i>|</Button>
                   </List.Item>
                 </List>
                 <div class="smallcaptext">Permanent link to this comic: https://xkcd.com/1958/</div>

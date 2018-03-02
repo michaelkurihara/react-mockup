@@ -79,6 +79,10 @@
 .my-middle-section .middle-column .ui.list .item {
 }
 
+.my-middle-section .middle-column .image {
+  margin: 15px;
+}
+
 .my-middle-section .row {
   padding: 0px;
 }
@@ -92,6 +96,26 @@
   margin: 10px;
 
 }
+
+.my-middle-section .middle-column .buttonmenu {
+  margin: 15px;
+  padding: 15px;
+}
+
+.my-middle-section .middle-column .button {
+  background-color: #6E7B91;
+  color: white;
+  border: 2px solid black;
+}
+
+.my-middle-section .middle-column .button:hover {
+  background-color: white;
+  color: #6E7B91;
+}
+
+
+
+
 
 
 .ui.middlebox.container .buttonmenu {
