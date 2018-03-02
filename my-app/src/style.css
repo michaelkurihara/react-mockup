@@ -1,11 +1,10 @@
 
-
 .my-background {
   background-color: #96A8C8;
   font-family: Lucida, Helvetica, sans-serif;
   padding-top: 5px;
   padding-bottom: 20px;
-  color: #282B30;
+  color: black;
   font-size: 21px;
   font-weight: 800;
   font-variant: small-caps;
@@ -34,6 +33,10 @@
   color: black;
   line-height: 100%;
   font-size: 21px;
+}
+
+.my-top-menu .left-column .list .item a {
+  color:inherit;
 }
 
 .my-top-menu .left-column .list .item:hover {

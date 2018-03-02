@@ -12,11 +12,11 @@ class TopMenu extends React.Component {
             <Grid.Row>
               <Grid.Column className="left-column" textAlign="left" width={3}>
                 <List>
-                  <List.Item><List.Content>Archive</List.Content></List.Item>
-                  <List.Item>What If?</List.Item>
-                  <List.Item>Blag</List.Item>
-                  <List.Item>Store</List.Item>
-                  <List.Item>About</List.Item>
+                  <List.Item><List.Content><a href="https://xkcd.com/archive/">Archive</a></List.Content></List.Item>
+                  <List.Item><a href="https://what-if.xkcd.com/">What If?</a></List.Item>
+                  <List.Item><a href="https://blog.xkcd.com/">Blag</a></List.Item>
+                  <List.Item><a href="https://store.xkcd.com/">Store</a></List.Item>
+                  <List.Item><a href="https://xkcd.com/about/">About</a></List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column className="right-column" width={7}>
