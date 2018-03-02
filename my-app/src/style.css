@@ -5,35 +5,29 @@
   font-family: Lucida, Helvetica, sans-serif;
   padding-top: 5px;
   padding-bottom: 20px;
-}
-
-.my-top-menu {
   color: #282B30;
   font-size: 21px;
   font-weight: 800;
   font-variant: small-caps;
+}
+
+.my-top-menu {
   text-align: left;
+  height: 100%;
+  margin-bottom: 2px;
 }
 
-.my-top-menu .row {
-
+.my-top-menu .ui.grid {
 }
 
-.my-top-menu .ui.column {
-}
 
 .my-top-menu .left-column {
   background-color: white;
   border: 1.5px solid black;
   border-radius: 12px;
   margin-right: 1.5px;
-  text-indent: 55px;
+  text-indent: 60px;
   padding: 20px;
-
-  /*float: left;*/
-  /*position: relative;*/
-  /*text-align: left;*/
-  /*padding: 17px*/
 }
 
 .my-top-menu .left-column .list .item {
@@ -46,16 +40,12 @@
   text-decoration: underline;
 }
 
-
 .my-top-menu .right-column {
   background-color: white;
   border: 1.5px solid black;
   border-radius: 12px;
   margin-right: 1.5px;
   text-indent: 10px;
-  width: 166px;
-  float: left;
-  position: relative;
   text-align: left;
   padding: 17px
 }
@@ -63,64 +53,49 @@
 .my-top-menu .right-column .smallcaptext {
   font-size: 16px;
   font-weight: 500;
+  text-indent: 20px;
 }
 
-.my-top-menu .right-column .list .item {
+.my-top-menu .right-column .ui.list .content {
+  font-size: 20px;
   text-align: left;
+  text-indent: 0;
 }
 
-.ui.topmenu.container {
-  color: #282B30;
-  font-size: 21px;
-  font-weight: 800;
-  font-variant: small-caps;
+.my-top-menu .right-column .row {
+  margin: 0;
 }
 
-.ui.topmenu.container .leftcolumn {
+
+.my-middle-section .middle-column {
   background-color: white;
   border: 1.5px solid black;
   border-radius: 12px;
   margin-right: 1.5px;
-  text-indent: 50px;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
-.ui.topmenu.container .leftcolumn a {
-  color: #282B30;
-  line-height: 150%;
+.my-middle-section .middle-column .ui.list .item {
 }
 
-.ui.topmenu.container .leftcolumn .link:hover {
-  text-decoration: underline;
+.my-middle-section .row {
+  padding: 0px;
 }
 
-.ui.topmenu.container .rightcolumn {
-  background-color: white;
-  border: 1.5px solid black;
-  border-radius: 12px;
-  margin-left: 1.5px;
+.my-middle-section .middle-column .smallcaptext {
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.ui.topmenu.container .rightcolumn .italictop {
-  font-size: 20px;
-  font-style: italic;
-  line-height: 120%;
-  vertical-align: top;
+.my-middle-section .middle-column  .buttonmenu {
+  margin: 10px;
+
 }
 
-.ui.middlebox.container .middlecolumn {
-  background-color: white;
-  border: 1.5px solid black;
-  border-radius: 12px;
-  color: #282B30;
-  font-size: 21px;
-  font-weight: 800;
-  font-variant: small-caps;
-  margin-top: 19px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 .ui.middlebox.container .buttonmenu {
+  margin: 15px;
   padding: 15px;
 }
 
@@ -134,3 +109,57 @@
   background-color: white;
   color: #6E7B91;
 }
+
+
+
+
+/*.ui.topmenu.container {*/
+  /*color: #282B30;*/
+  /*font-size: 21px;*/
+  /*font-weight: 800;*/
+  /*font-variant: small-caps;*/
+/*}*/
+
+/*.ui.topmenu.container .leftcolumn {*/
+  /*background-color: white;*/
+  /*border: 1.5px solid black;*/
+  /*border-radius: 12px;*/
+  /*margin-right: 1.5px;*/
+  /*text-indent: 50px;*/
+/*}*/
+
+/*.ui.topmenu.container .leftcolumn a {*/
+  /*color: #282B30;*/
+  /*line-height: 150%;*/
+/*}*/
+
+/*.ui.topmenu.container .leftcolumn .link:hover {*/
+  /*text-decoration: underline;*/
+/*}*/
+
+/*.ui.topmenu.container .rightcolumn {*/
+  /*background-color: white;*/
+  /*border: 1.5px solid black;*/
+  /*border-radius: 12px;*/
+  /*margin-left: 1.5px;*/
+/*}*/
+
+/*.ui.topmenu.container .rightcolumn .italictop {*/
+  /*font-size: 20px;*/
+  /*font-style: italic;*/
+  /*line-height: 120%;*/
+  /*vertical-align: top;*/
+/*}*/
+
+/*.ui.middlebox.container .middlecolumn {*/
+  /*background-color: white;*/
+  /*border: 1.5px solid black;*/
+  /*border-radius: 12px;*/
+  /*color: #282B30;*/
+  /*font-size: 21px;*/
+  /*font-weight: 800;*/
+  /*font-variant: small-caps;*/
+  /*margin-top: 19px;*/
+  /*padding-left: 15px;*/
+  /*padding-right: 15px;*/
+/*}*/

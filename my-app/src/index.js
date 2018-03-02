@@ -2,42 +2,40 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Container, Dropdown, Grid, Icon, Image, Input, List, Menu } from 'semantic-ui-react';
+import { Container, Grid, Header, Image, List, Menu } from 'semantic-ui-react';
 
 class TopMenu extends React.Component {
   render() {
     return (
         <div className="my-top-menu">
-            <Grid columns={2} textAlign="center">
-              <Grid.Row>
-                <Grid.Column className="left-column" textAlign="left" width={3}>
-                  <List>
-                    <List.Item><List.Content>Archive</List.Content></List.Item>
-                    <List.Item>What If?</List.Item>
-                    <List.Item>Blag</List.Item>
-                    <List.Item>Store</List.Item>
-                    <List.Item>About</List.Item>
-                  </List>
-                </Grid.Column>
-                <Grid.Column className="right-column" width={6}>
-                  <Grid rows={2}>
-                    <Grid.Row verticalAlign="middle">
-                        <List horizontal>
-                          <List.Item>
-                            <Image src="https://xkcd.com/s/0b7742.png" />
-                            <List.Content verticalAlign="Middle" textAlign="left">
-                              A webcomic of romance,<br/>sarcasm, math, and language.
-                            </List.Content>
-                          </List.Item>
-                        </List>
-                    </Grid.Row>
-                    <Grid.Row>
-                      <div className="smallcaptext">xkcd updates every monday, wednesday, and friday.</div>
-                    </Grid.Row>
-                  </Grid>
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
+          <Grid columns={2} textAlign="center">
+            <Grid.Row>
+              <Grid.Column className="left-column" textAlign="left" width={3}>
+                <List>
+                  <List.Item><List.Content>Archive</List.Content></List.Item>
+                  <List.Item>What If?</List.Item>
+                  <List.Item>Blag</List.Item>
+                  <List.Item>Store</List.Item>
+                  <List.Item>About</List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column className="right-column" width={7}>
+                <Grid rows={2}>
+                  <Grid.Row verticalAlign="middle">
+                    <List horizontal>
+                      <List.Item>
+                        <Image src="https://xkcd.com/s/0b7742.png" />
+                        <List.Content verticalAlign="Middle">
+                          A webcomic of romance,<br/>sarcasm, math, and language.
+                        </List.Content>
+                      </List.Item>
+                    </List>
+                    <div className="smallcaptext">xkcd updates every monday, wednesday, and friday.</div>
+                  </Grid.Row>
+                </Grid>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
         </div>
     )
   }
@@ -46,17 +44,39 @@ class TopMenu extends React.Component {
 class MiddleSection extends React.Component {
   render() {
     return (
-        <div className="middleSection">
-          <Container>
-            <Grid verticalAlign="middle" columns={2} divided>
-              <Grid.Column>
-                <Image src="http://murphyshawaii.com/media/2014/04/murphyshawaiilogo.png" centered/>
+        <div className="my-middle-section">
+          <Grid columns={1} textAlign="center">
+            <Grid.Row>
+              <Grid.Column className="middle-column" textAligned="center" width={10}>
+                <List textAligned="center">
+                  <List.Item><List.Content>Interaction</List.Content></List.Item>
+                  <List.Item>
+                    <div class="centered buttonmenu buttons">
+                      <button class="ui mybutton compact mini button">|<i class="chevron left icon"></i></button>
+                      <button class="ui mybutton compact mini button"><i class="chevron left icon"></i>Prev</button>
+                      <button class="ui mybutton compact mini button">Random</button>
+                      <button class="ui mybutton compact mini button">Next<i class="chevron right icon"></i></button>
+                      <button class="ui mybutton compact mini button"><i class="chevron right icon"></i>|</button>
+                    </div>
+                  </List.Item>
+                  <Image src="https://imgs.xkcd.com/comics/interaction.png" centered />
+                  <List.Item>
+                    <div class="centered buttonmenu buttons">
+                      <button class="ui mybutton compact mini button">|<i class="chevron left icon"></i></button>
+                      <button class="ui mybutton compact mini button"><i class="chevron left icon"></i>Prev</button>
+                      <button class="ui mybutton compact mini button">Random</button>
+                      <button class="ui mybutton compact mini button">Next<i class="chevron right icon"></i></button>
+                      <button class="ui mybutton compact mini button"><i class="chevron right icon"></i>|</button>
+                    </div>
+                  </List.Item>
+                </List>
+                <div class="smallcaptext">Permanent link to this comic: https://xkcd.com/1958/</div>
+                <div class="smallcaptext">
+                  Image URL (for hotlinking/embedding): https://imgs.xkcd.com/comics/self_driving_issues.png
+                </div>
               </Grid.Column>
-              <Grid.Column>
-                <div class="text">A traditional downtown saloon and eatery located in the Honolulu Financial District,just one block off the waterfront, Murphy's has been a haven for mariners, businessmen and locals since 1891.</div>
-              </Grid.Column>
-            </Grid>
-          </Container>
+            </Grid.Row>
+          </Grid>
         </div>
     )
   }
@@ -107,6 +127,7 @@ class Xkcd extends React.Component {
     return (
         <div className="my-background">
           <TopMenu/>
+          <MiddleSection/>
         </div>
     );
   }
